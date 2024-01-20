@@ -1,0 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Choose : MonoBehaviour
+{
+
+    Canvas canvas;
+
+    RectTransform choosePrefab;
+
+    void Start()
+    {
+
+        canvas = FindAnyObjectByType<Canvas>();
+
+        choosePrefab = GetComponent<RectTransform>();
+
+        choosePrefab.transform.localPosition = new Vector2( canvas.scaleFactor, canvas.scaleFactor);
+        
+    }
+
+    void Update()
+    {
+
+    }
+
+}

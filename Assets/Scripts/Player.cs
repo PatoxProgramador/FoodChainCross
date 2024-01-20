@@ -10,8 +10,15 @@ public class Player : MonoBehaviour
     RectTransform b;
 
     Canvas canvas;
+    BoxCollider2D collided;
+
+    public float size;
+
+    public float speed;
 
     float movementX;
+
+    public float despawn = 3;
 
     void Start()
     {
@@ -20,14 +27,19 @@ public class Player : MonoBehaviour
 
         b = GetComponent<RectTransform>();
 
+        collided = GetComponent<BoxCollider2D>();
+
         transform.localPosition = new Vector2(0,0);
 
         //sizing the images with the canvas size;
-        b.sizeDelta = new Vector2(100 * canvas.scaleFactor, 100 * canvas.scaleFactor);
+        b.sizeDelta = new Vector2(size * canvas.scaleFactor, size * canvas.scaleFactor);
 
-        movementX = 1 * canvas.scaleFactor;
+        collided.size = b.sizeDelta;
+        collided.offset = new Vector2(0,0);
 
-        Destroy(gameObject,2);
+        movementX = speed * canvas.scaleFactor;
+
+        Destroy(gameObject,despawn);
 
     }
 
