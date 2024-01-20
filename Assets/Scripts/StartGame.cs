@@ -29,7 +29,7 @@ public class StartGame : MonoBehaviour
 
         Menu.winner = "";
 
-        SceneManager.LoadScene("FirstLevel");
+        SceneManager.LoadScene("TutorialFirst");
         
     }
     public void Quit()

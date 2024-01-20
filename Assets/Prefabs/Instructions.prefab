@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4878101766810222900}
   - component: {fileID: 3402066048458733183}
   - component: {fileID: 59439735004051792}
+  - component: {fileID: 4894162408864529691}
   m_Layer: 5
   m_Name: Instructions
   m_TagString: Untagged
@@ -102,6 +103,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4894162408864529691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007308342928279266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee82b077eae0c2489dc024e71f499db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
 --- !u!1 &6471908906726259927
 GameObject:
   m_ObjectHideFlags: 0

@@ -475,7 +475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8570396166906809698, guid: b614c163f9c1ba947b92ab2111decc36, type: 3}
       propertyPath: next
-      value: SecondLevel
+      value: TutorialSecond
       objectReference: {fileID: 0}
     - target: {fileID: 8570396166906809698, guid: b614c163f9c1ba947b92ab2111decc36, type: 3}
       propertyPath: scene

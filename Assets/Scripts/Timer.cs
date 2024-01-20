@@ -52,6 +52,13 @@ public class Timer : MonoBehaviour
 
             time -= Time.deltaTime;
 
+            minutes = Mathf.FloorToInt(time / 60);
+            seconds = Mathf.FloorToInt(time % 60);
+
+            display = "Time left: " + string.Format("{0:00}:{1:00}", minutes, seconds);
+
+            timer.text = display;
+
         }
         else if(time <= 0 && lose == false)
         {
@@ -65,13 +72,6 @@ public class Timer : MonoBehaviour
             lose = true;
 
         }
-
-        minutes = Mathf.FloorToInt(time / 60);
-        seconds = Mathf.FloorToInt(time % 60);
-
-        display = "Time left: " + string.Format("{0:00}:{1:00}", minutes, seconds);
-
-        timer.text = display;
 
     }
 
