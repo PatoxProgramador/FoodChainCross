@@ -32,6 +32,8 @@ public class Menu : MonoBehaviour
     public void MenuButton()
     {
 
+        StartGame.start = false;
+
         SceneManager.LoadScene("StartScene");
 
     }
