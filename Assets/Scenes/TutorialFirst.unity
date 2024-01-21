@@ -373,9 +373,9 @@ PrefabInstance:
     - target: {fileID: 1147161077648393551, guid: 6239b4b9c37025d41af55101ca10f433, type: 3}
       propertyPath: m_Text
       value: "Try to avoid touching the enemies\n\nWhile aiming to get the the Orange
-        Square \nbefore the time runs out\n\nMove with arrow keys or WASD\n\nGreen
-        > Yellow > red\n\nexample:\nGreen(You) + Yellow/Red(enemy) = Yellow/Red(You)\n\nYellow(You)
-        + Yellow/Green(enemy) = dead(you)"
+        Square \nbefore the time runs out\n\nMove with arrow keys or WASD\n\nDog
+        > Cat> Chicken\n\nexample:\nDog(You) + Cat/Chicken(enemy) = Cat/Chicken(You)\n\nCat(You)
+        + Cat/Dog(enemy) = dead(you)"
       objectReference: {fileID: 0}
     - target: {fileID: 1147161077648393551, guid: 6239b4b9c37025d41af55101ca10f433, type: 3}
       propertyPath: m_Color.b
