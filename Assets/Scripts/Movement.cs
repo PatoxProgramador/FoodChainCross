@@ -22,6 +22,8 @@ public class Movement : MonoBehaviour
 
     Text ending;
 
+    public Sprite[] group = new Sprite[3];
+
     void Start()
     {
 
@@ -38,7 +40,7 @@ public class Movement : MonoBehaviour
         colliding.size = size.sizeDelta;
         colliding.offset = new Vector2(0,0);
 
-        body.color = Color.green;
+        body.sprite = group[0];
         gameObject.tag = "Green";
 
         copy = next;
@@ -77,7 +79,7 @@ public class Movement : MonoBehaviour
         {
 
             gameObject.tag = "Yellow";
-            body.color = Color.yellow;
+            body.sprite = group[1];
 
             Destroy(collision.gameObject);
 
@@ -86,7 +88,7 @@ public class Movement : MonoBehaviour
         {
 
             gameObject.tag = "Red";
-            body.color = Color.red;
+            body.sprite = group[2];
 
             Destroy(collision.gameObject);
 

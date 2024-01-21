@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour{
 
     public Canvas canvas;
 
-    Color []lives = { new Color(0,255,0), new Color(255,255,0), new Color(255,0,0) };
+    public Sprite[] lives = new Sprite[3];
     string[] names = { "Green", "Yellow", "Red"}; 
 
     int ready;
@@ -44,7 +44,7 @@ public class Spawner : MonoBehaviour{
 
                 Image tL = Instantiate(enemyPrefab, transform.localPosition, Quaternion.identity) as Image;
                 tL.transform.SetParent(GameObject.FindGameObjectWithTag("TL").transform, false);
-                tL.color = lives[ready];
+                tL.sprite = lives[ready];
                 tL.tag = names[ready];
 
             }
@@ -53,7 +53,7 @@ public class Spawner : MonoBehaviour{
 
                 Image l = Instantiate(enemyPrefab, transform.localPosition, Quaternion.identity) as Image;
                 l.transform.SetParent(GameObject.FindGameObjectWithTag("L").transform, false);
-                l.color = lives[ready];
+                l.sprite= lives[ready];
                 l.tag = names[ready];
 
             }
@@ -62,7 +62,7 @@ public class Spawner : MonoBehaviour{
 
                 Image tR = Instantiate(enemyPrefab, transform.localPosition, Quaternion.identity) as Image;
                 tR.transform.SetParent(GameObject.FindGameObjectWithTag("TR").transform, false);
-                tR.color = lives[ready];
+                tR.sprite = lives[ready];
                 tR.tag = names[ready];
 
             }
@@ -71,7 +71,7 @@ public class Spawner : MonoBehaviour{
 
                 Image bR = Instantiate(enemyPrefab, transform.localPosition, Quaternion.identity) as Image;
                 bR.transform.SetParent(GameObject.FindGameObjectWithTag("BR").transform, false);
-                bR.color = lives[ready];
+                bR.sprite = lives[ready];
                 bR.tag = names[ready];
 
             }

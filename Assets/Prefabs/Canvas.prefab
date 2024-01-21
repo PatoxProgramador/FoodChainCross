@@ -270,6 +270,10 @@ MonoBehaviour:
   enemyPrefab: {fileID: 8521419011319910800, guid: cb34ed115ea03984ea5d95ff1b1e73de, type: 3}
   canSpawn: 1
   canvas: {fileID: 7682232861069829866}
+  lives:
+  - {fileID: 21300000, guid: 36d1a13073ed4464093ba924b7a3e8c8, type: 3}
+  - {fileID: 21300000, guid: 71d06683e4472e649b674a79d8821a94, type: 3}
+  - {fileID: 21300000, guid: a5376511aede5dc4ca0545ef08a4e1de, type: 3}
 --- !u!1 &2740966346034012332
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +451,10 @@ MonoBehaviour:
   enemyPrefab: {fileID: 8521419011319910800, guid: cb34ed115ea03984ea5d95ff1b1e73de, type: 3}
   canSpawn: 1
   canvas: {fileID: 7682232861069829866}
+  lives:
+  - {fileID: 21300000, guid: 36d1a13073ed4464093ba924b7a3e8c8, type: 3}
+  - {fileID: 21300000, guid: 71d06683e4472e649b674a79d8821a94, type: 3}
+  - {fileID: 21300000, guid: a5376511aede5dc4ca0545ef08a4e1de, type: 3}
 --- !u!1 &3631416863909399547
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 36d1a13073ed4464093ba924b7a3e8c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -538,6 +546,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  next: 
+  group:
+  - {fileID: 21300000, guid: 36d1a13073ed4464093ba924b7a3e8c8, type: 3}
+  - {fileID: 21300000, guid: 71d06683e4472e649b674a79d8821a94, type: 3}
+  - {fileID: 21300000, guid: a5376511aede5dc4ca0545ef08a4e1de, type: 3}
 --- !u!50 &3235647535316846422
 Rigidbody2D:
   serializedVersion: 4
@@ -662,6 +675,10 @@ MonoBehaviour:
   enemyPrefab: {fileID: 8521419011319910800, guid: cb34ed115ea03984ea5d95ff1b1e73de, type: 3}
   canSpawn: 1
   canvas: {fileID: 7682232861069829866}
+  lives:
+  - {fileID: 21300000, guid: 36d1a13073ed4464093ba924b7a3e8c8, type: 3}
+  - {fileID: 21300000, guid: 71d06683e4472e649b674a79d8821a94, type: 3}
+  - {fileID: 21300000, guid: a5376511aede5dc4ca0545ef08a4e1de, type: 3}
 --- !u!1 &5023714293310808033
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +840,10 @@ MonoBehaviour:
   enemyPrefab: {fileID: 8521419011319910800, guid: cb34ed115ea03984ea5d95ff1b1e73de, type: 3}
   canSpawn: 1
   canvas: {fileID: 7682232861069829866}
+  lives:
+  - {fileID: 21300000, guid: 36d1a13073ed4464093ba924b7a3e8c8, type: 3}
+  - {fileID: 21300000, guid: 71d06683e4472e649b674a79d8821a94, type: 3}
+  - {fileID: 21300000, guid: a5376511aede5dc4ca0545ef08a4e1de, type: 3}
 --- !u!1 &8988160934909034006
 GameObject:
   m_ObjectHideFlags: 0
