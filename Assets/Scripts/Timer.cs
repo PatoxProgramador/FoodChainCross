@@ -19,6 +19,8 @@ public class Timer : MonoBehaviour
 
     bool lose;
 
+    public AudioSource sound; 
+
     private void Awake()
     {
 
@@ -41,6 +43,8 @@ public class Timer : MonoBehaviour
         time = 180;
 
         lose = false;
+
+        sound.Play();
 
     }
 
@@ -70,6 +74,18 @@ public class Timer : MonoBehaviour
             SceneManager.LoadScene("EndScene");
 
             lose = true;
+
+        }
+        if (StartGame.start == false)
+        {
+
+            sound.Pause();
+
+        }
+        else
+        {
+
+            sound.UnPause();
 
         }
 
