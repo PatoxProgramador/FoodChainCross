@@ -15,8 +15,6 @@ public class Timer : MonoBehaviour
 
     int minutes, seconds;
 
-    Text ending;
-
     bool lose;
 
     public AudioSource sound; 
@@ -44,7 +42,7 @@ public class Timer : MonoBehaviour
 
         lose = false;
 
-        sound.Play();
+        sound.Play  ();
 
     }
 

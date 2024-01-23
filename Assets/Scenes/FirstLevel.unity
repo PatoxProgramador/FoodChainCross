@@ -379,6 +379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Timer
       objectReference: {fileID: 0}
+    - target: {fileID: 6526611451803642193, guid: fc4cd38f9e4d7064fb85b4e36fe1db44, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7861338748777778733, guid: fc4cd38f9e4d7064fb85b4e36fe1db44, type: 3}
       propertyPath: m_SortingOrder
       value: 1
