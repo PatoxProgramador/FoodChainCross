@@ -15,6 +15,11 @@ public class Movement : MonoBehaviour
 
     BoxCollider2D colliding;
 
+    int spriteWidth = 100;
+    int spriteHeight = 100;
+
+    int difference = 40;
+
     Image body;
 
     public string next;
@@ -35,9 +40,9 @@ public class Movement : MonoBehaviour
 
         body = GetComponent<Image>();
 
-        size.sizeDelta = new Vector2(100 * canvas.scaleFactor, 100 * canvas.scaleFactor);
+        size.sizeDelta = new Vector2(spriteWidth * canvas.scaleFactor, spriteHeight * canvas.scaleFactor);
 
-        colliding.size = size.sizeDelta;
+        colliding.size = new Vector2((spriteWidth * canvas.scaleFactor) - (difference * canvas.scaleFactor), (spriteHeight * canvas.scaleFactor) - (difference * canvas.scaleFactor));
         colliding.offset = new Vector2(0,0);
 
         body.sprite = group[0];
